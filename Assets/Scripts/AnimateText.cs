@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class TextAnimator : MonoBehaviour
+public class AnimateText : MonoBehaviour
 {
     [SerializeField] private Text _text;
 
@@ -12,11 +12,6 @@ public class TextAnimator : MonoBehaviour
 
 
     private void Start()
-    {
-        AnimateText();
-    }
-
-    private void AnimateText()
     {
         Sequence sequence = DOTween.Sequence();
 
